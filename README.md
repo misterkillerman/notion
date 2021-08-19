@@ -1,2 +1,2 @@
 # notion
-link is 
+link is https://misterkillerman.github.io/notion/
