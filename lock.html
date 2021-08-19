@@ -1,20 +1,17 @@
 
 
 <script type="text/javascript">
-  var lock = document.getElementById('lock')
-  if (lock == 2307) {
-    console.log("https://www.notion.so/mrkillermannotion/ze-journals-f9004e5b0c574a52817b8e7c8a4256d1");
-  }
-  else {
-    alert("incorrect password")
+  function lock(){
+    var input = document.getElementbyId("password").value
+    alert(input)
   }
 </script>
 
-<form>
-  <input type="number" id="lock" value="enter password">
-  <button type="submit">
+<form onsubmit="lock()">
+  <input type="number" id="password" value="enter password">
+  <input type="submit">
     submit
-  </button>
+  </input>
 </form>
   
 
