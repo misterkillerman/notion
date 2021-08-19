@@ -2,8 +2,9 @@
 
 <script type="text/javascript">
   function lock(){
-    var input = document.getElementbyId("password").value
-    alert(input)
+    var input = document.getElementbyId("password").value;
+    var space = document.getElementbyId("space");
+    space.innerHTML = input
   }
 </script>
 
@@ -13,5 +14,7 @@
     submit
   </input>
 </form>
+<div id="space">
+</div>  
   
 
