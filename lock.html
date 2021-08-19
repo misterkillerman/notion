@@ -1,19 +1,21 @@
 
-<script type="text/javascript">
-  function lock(){
-    var input = document.getElementbyId("password").value;
-    // var space = document.getElementbyId("space");
-    // space.innerHTML = input
-    alert(input)
-  }
-</script>
+<!DOCTYPE html>
+<html>
+<body>
 
-<form onsubmit="lock()">
-  <input type="number" id="password">
-  <input type="submit">
-    submit
-  </input>
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+<form action="/action_page.php" onsubmit="myFunction()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
 </form>
 
-<div id="space">
-</div>
+<script>
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
+
+</body>
+</html>
+
