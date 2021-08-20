@@ -2,25 +2,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<p>When you submit the form, a function is triggered which alerts some text.</p>
-
-<form onsubmit="myFunction()">
-  Enter name: <input type="text" name="fname">
-  <input type="submit" value="Submit">
-</form>
-<div id="space">
-  
-</div>
-  
-    
-
-<script>
-function myFunction() {
-    var space = document.getElementbyId("space");
-    space.innerHTML = "the form is submitted"
-}
-</script>
+  <form onsubmit = "lock()">
+    enter password
+    <input type="number" id="password">
+  </form>
 
 </body>
 </html>
