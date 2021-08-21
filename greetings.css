@@ -5,12 +5,12 @@ body{
 }
 
 #time, #day, #greetings{
-  color: var(--font);
+  color: var(--Lightfont);
   letter-spacing: 0.5px;
 }
 
 #greetingContainer{
-  background-color: var(--greyBG);
+  background-color: var(--LightgreyBG);
   padding: 1px;
   padding-left: 5px;
   border-radius: 2px;
@@ -19,7 +19,7 @@ body{
 #greetings{
   padding: 5px 0px 5px 10px;
   margin-left: 10px;
-  border-left: solid var(--font) 4px;
+  border-left: solid var(--Lightfont) 4px;
   border-radius: 2px;
   font-size: 20px;
   font-weight: bold;
@@ -31,7 +31,10 @@ body{
 }
 
 :root{
-  --font: rgb(55, 53, 47);
-  --greyBG: rgb(233, 229, 227);
-  --whiteBG: rgb(255, 255, 255)
+  --Lightfont: rgb(55, 53, 47);
+  --Darkfont: rgb(237, 237, 238);
+  --LightgreyBG: rgb(233, 229, 227);
+  --DarkgreyBG: rgb(69, 75, 78);
+  --whiteBG: rgb(255, 255, 255);
+  --darkBG: rgb(47, 52, 55)
 }
