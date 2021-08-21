@@ -27,6 +27,7 @@ body{
 
 #time, #day{
   margin: 15px;
+  text-align: center;
 }
 
 :root{
