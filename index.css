@@ -1,6 +1,6 @@
 body{
   font-family: "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 18px;
   background-color: var(--whiteBG);
 }
 
@@ -21,7 +21,7 @@ body{
   margin-left: 10px;
   border-left: solid var(--font) 4px;
   border-radius: 2px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
