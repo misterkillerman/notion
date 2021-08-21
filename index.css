@@ -1,6 +1,7 @@
 body{
   font-family: "Times New Roman", serif;
   font-size: 20px;
+  background-color: var(--whiteBG)
 }
 
 #time, #day, #greetings{
@@ -30,5 +31,6 @@ body{
 
 :root{
   --font: rgb(55, 53, 47);
-  --greyBG: rgb(233, 229, 227)
+  --greyBG: rgb(233, 229, 227);
+  --whiteBG: rgb(255, 255, 255)
 }
