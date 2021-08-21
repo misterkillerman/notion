@@ -60,7 +60,6 @@
 
   spaceDay.innerHTML = "Today is " + date + " " + month + " " + year + ", " + day + "."
 
-
 function startTime() {
     const today = new Date();
     let h = today.getHours();
@@ -79,17 +78,21 @@ function startTime() {
       greet = "Good afternoon"
     } else {
       greet = "Good evening"
+      document.getElementById('time').style.color = "var(--Darkfont)"
+      document.getElementById('day').style.color = "var(--Darkfont)"
+      document.getElementById('greetings').style.color = "var(--Darkfont)"
+      document.getElementById('greetingContainer').style.backgroundColor = "var(--DarkgreyBG)"
+      document.body.style.backgroundColor = "var(--darkBG)"
     }
 
     spaceTime.innerHTML = greet + ", it is curently " + totaltime + "."
-
-
   }
 
   function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
   }
+
 
 
 
