@@ -73,17 +73,16 @@ function startTime() {
     setTimeout(startTime, 1000);
 
     var greet = ""
-    if(5 < h > 12){
+    if (h > 5 && h <12) {
       greet = "Good morning"
-    } else if (12 <= h < 18) {
+    } else if (h >= 12 && h < 18) {
       greet = "Good afternoon"
-    } else if (18 <= h < 21){
+    } else {
       greet = "Good evening"
-    } else if (h <= 5){
-      greet = "Good night"
     }
 
     spaceTime.innerHTML = greet + ", it is curently " + totaltime + "."
+
 
   }
 
@@ -91,6 +90,8 @@ function startTime() {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
   }
+
+
 
 </script>
 
