@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="startTime()">
+
+<div id="greetingContainer">
+  <p id="greetings">
+    <i>how are you doing today?</i>
+  </p>
+</div>
+
+
+<div id="day"></div>
+
+<div id="time"></div>
+
+<script type="text/javascript">
+  const d = new Date();
+  // get year
+  var year = d.getFullYear();
+  // get date
+  var date = d.getDate();
+
+  //get month
+  var monthNo = d.getMonth();
+  var monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
+  var month = monthNames[monthNo];
+
+  // get day of the week
+  var dayNumber = d.getDay()
+  var dayNames = [
+    "Monday",
+    "Tuesday",
+    "Wedneday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ]
+  var day = dayNames[dayNumber]
+
+  var spaceDay = document.getElementById('day')
+
+  spaceDay.innerHTML = "Today is " + date + " " + month + " " + year + ", " + day + "."
+
+
+function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    var totaltime = h + ":" + m + ":" + s
+    var spaceTime = document.getElementById('time')
+    setTimeout(startTime, 1000);
+
+    var greet = ""
+    if(5 < h > 12){
+      greet = "Good morning"
+    } else if (12 <= h < 18) {
+      greet = "Good afternoon"
+    } else if (18 <= h < 21){
+      greet = "Good evening"
+    } else if (h <= 5){
+      greet = "Good night"
+    }
+
+    spaceTime.innerHTML = greet + ", it is curently " + totaltime + "."
+
+  }
+
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+
+</script>
+
+</body>
+</html>
