@@ -10,7 +10,7 @@ body{
 }
 
 #greetingContainer{
-  background-color: var(--LightgreyBG);
+  background-color: var(--LightHL);
   padding: 1px;
   padding-left: 5px;
   border-radius: 2px;
@@ -33,8 +33,8 @@ body{
 :root{
   --Lightfont: rgb(55, 53, 47);
   --Darkfont: rgb(237, 237, 238);
-  --LightgreyBG: rgb(233, 229, 227);
-  --DarkgreyBG: rgb(69, 75, 78);
+  --LightHL: rgb(191, 217, 240);
+  --DarkHL: rgb(77, 93, 128);
   --whiteBG: rgb(255, 255, 255);
   --darkBG: rgb(47, 52, 55)
 }
