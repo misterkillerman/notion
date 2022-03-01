@@ -32,9 +32,9 @@ body{
 
 :root{
   --Lightfont: rgb(55, 53, 47);
-  --Darkfont: rgb(237, 237, 238);
+  --Darkfont: rgb(227,227, 227);
   --LightHL: rgb(235, 236,237);
-  --DarkHL: rgb(69, 75, 78);
+  --DarkHL: rgb(47,47,47);
   --whiteBG: rgb(255, 255, 255);
-  --darkBG: rgb(47, 52, 55)
+  --darkBG: rgb(25,25,25)
 }
